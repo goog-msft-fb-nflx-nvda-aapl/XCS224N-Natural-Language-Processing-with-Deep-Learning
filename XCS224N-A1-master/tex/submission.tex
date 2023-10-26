@@ -1,0 +1,95 @@
+% This contents of this file will be inserted into the _Solutions version of the
+% output tex document.  Here's an example:
+
+% If assignment with subquestion (1.a) requires a written response, you will
+% find the following flag within this document: <SCPD_SUBMISSION_TAG>_1a
+% In this example, you would insert the LaTeX for your solution to (1.a) between
+% the <SCPD_SUBMISSION_TAG>_1a flags.  If you also constrain your answer between the
+% START_CODE_HERE and END_CODE_HERE flags, your LaTeX will be styled as a
+% solution within the final document.
+
+% Please do not use the '<SCPD_SUBMISSION_TAG>' character anywhere within your code.  As expected,
+% that will confuse the regular expressions we use to identify your solution.
+\def\assignmentnum{1 }
+\def\assignmentname{Exploring Word Embeddings}
+\def\assignmenttitle{XCS224N Assignment \assignmentnum \assignmentname}
+\input{macros}
+\begin{document}
+\pagestyle{myheadings} \markboth{}{\assignmenttitle}
+
+% <SCPD_SUBMISSION_TAG>_entire_submission
+
+This handout includes space for every question that requires a written response.
+Please feel free to use it to handwrite your solutions (legibly, please).  If
+you choose to typeset your solutions, the |README.md| for this assignment includes
+instructions to regenerate this handout with your typeset \LaTeX{} solutions.
+\ruleskip
+
+\LARGE
+4.a
+\normalsize
+
+% <SCPD_SUBMISSION_TAG>_4a
+\begin{answer}
+  % ### START CODE HERE ###
+  % ### END CODE HERE ###
+\end{answer}
+% <SCPD_SUBMISSION_TAG>_4a
+\clearpage
+
+\LARGE
+4.b
+\normalsize
+
+% <SCPD_SUBMISSION_TAG>_4b
+\begin{answer}
+  % ### START CODE HERE ###
+\begin{itemize}
+        \item The columns of $\textbf{V}$ form an orthonormal basis for the row space of $\textbf{A}$, and thus $\textbf{V}^{T}\textbf{V} = \textbf{I}$. \\ 
+        The $i$th column $\textbf{v}_{i}$ of $\textbf{V}$ is known as the $i$th right singular vector of $\textbf{A}$.  
+\end{itemize}
+
+Recall that for a linear subspace $W \subset \mathbb{R}^{p}$, the projection of some vector $\textbf{v}$ onto $W$ is defined as
+\begin{equation}
+\text{proj}_{W}(\textbf{v}) := \argmin_{w \in W} \vert \vert w - \textbf{v}\vert \vert _{2}^2
+\label{proj_def}
+\end{equation}
+
+In the special case that $W$ is a one dimensional vector space spanned by some $\textbf{w}$, we call this projection the projection of  $\textbf{v}$ onto $\textbf{w}$ which has simple closed form. We give it below, where we have let $\hat{\textbf{w}} := \textbf{w}/\vert \vert \textbf{w}\vert \vert _2$ represent the unit vector pointing in the direction of $\textbf{w}$.
+
+\begin{equation}
+\textrm{proj}_{\textbf{w}}(\textbf{v}) = \bigg(\frac{\textbf{v}^{T}\textbf{w}}{\vert \vert \textbf{w}\vert \vert _2^2}\bigg) \textbf{w} = (\textbf{v}^{T}\hat{\textbf{w}}) \hat{\textbf{w}}
+\label{proj_1d}
+\end{equation}
+
+  % ### END CODE HERE ###
+\end{answer}
+% <SCPD_SUBMISSION_TAG>_4b
+\clearpage
+
+\LARGE
+4.c
+\normalsize
+
+% <SCPD_SUBMISSION_TAG>_4c
+\begin{answer}
+  % ### START CODE HERE ###
+  % ### END CODE HERE ###
+\end{answer}
+% <SCPD_SUBMISSION_TAG>_4c
+\clearpage
+
+\LARGE
+4.d
+\normalsize
+
+% <SCPD_SUBMISSION_TAG>_4d
+\begin{answer}
+  % ### START CODE HERE ###
+  % ### END CODE HERE ###
+\end{answer}
+% <SCPD_SUBMISSION_TAG>_4d
+\clearpage
+
+% <SCPD_SUBMISSION_TAG>_entire_submission
+\end{document}
